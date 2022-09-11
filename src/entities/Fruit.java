@@ -36,4 +36,17 @@ public class Fruit {
     public void setTaste(Tastes taste) {
         this.taste = taste;
     }
+
+    public void exampleCall() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Fruit{" +
+                "color=" + color +
+                ", family='" + family + '\'' +
+                ", taste=" + taste +
+                '}';
+    }
 }

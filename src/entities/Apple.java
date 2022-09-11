@@ -9,11 +9,9 @@ import static entities.enums.Colors.RED;
 import static entities.enums.Tastes.SWEET;
 
 public class Apple extends Fruit {
-
     private String name;
     private Date expirationDate;
     private String provider;
-
 
     /**
      * Default apple
@@ -36,6 +34,16 @@ public class Apple extends Fruit {
         this.provider = provider;
     }
 
+    public Apple(String name, Date expirationDate, String provider) {
+        super(RED, "tree", SWEET);
+        this.name = name;
+        this.expirationDate = expirationDate;
+        this.provider = provider;
+    }
+
+    /**
+     * GETTERS & SETTERS
+     */
     public String getName() {
         return name;
     }
@@ -58,5 +66,23 @@ public class Apple extends Fruit {
 
     public void setProvider(String provider) {
         this.provider = provider;
+    }
+
+
+    public void showParentAttributes() {
+        System.out.println(
+                "Color: " + this.getColor() +
+                        " Taste: " + super.getTaste() +
+                        " Family: " + super.getFamily()
+        );
+    }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "name='" + name + '\'' +
+                ", expirationDate=" + expirationDate +
+                ", provider='" + provider + '\'' +
+                "} " + super.toString();
     }
 }
