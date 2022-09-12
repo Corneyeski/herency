@@ -1,4 +1,6 @@
 import entities.Apple;
+import entities.abstraction.A;
+import entities.abstraction.B;
 import entities.enums.Colors;
 import entities.enums.Tastes;
 import entities.polymorphism.Animal;
@@ -12,18 +14,35 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("********************INHERITANCE********************");
+
         /**
          * Example of inheritance
          */
         inheritanceExample();
 
+        System.out.println("********************POLYMORPHISM********************");
 
         /**
          * Example of polymorphism
          */
         polymorphismExample();
 
+        System.out.println("********************OVERLOAD********************");
 
+        /**
+         * Example of overload
+         */
+        overload();
+        overload(1);
+        overload("test");
+
+        System.out.println("********************ABSTRACTION********************");
+
+        /**
+         * Example of abstraction
+         */
+        abstraction();
 
     }
 
@@ -42,10 +61,6 @@ public class Main {
 
         Apple apple2 = new Apple("green apple", new Date(), "Frucasa");
         System.out.println(apple2);
-
-        overload();
-        overload(1);
-        overload("test");
     }
 
 
@@ -68,5 +83,15 @@ public class Main {
 
     public static void overload(String i) {
         System.out.println("Overload with one parameter type String");
+    }
+
+    public static void abstraction() {
+        A abs = new B();
+        abs.printSomething();
+        A.printSomething("Cool");
+
+        B b = new B();
+        b.printSomething();
+        b.printStatus();
     }
 }
