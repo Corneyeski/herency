@@ -12,7 +12,6 @@ public class Fruit {
         this.family = family;
         this.taste = taste;
     }
-
     public Colors getColor() {
         return color;
     }
@@ -40,6 +39,8 @@ public class Fruit {
     public void exampleCall() {
 
     }
+
+
 
     @Override
     public String toString() {

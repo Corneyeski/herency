@@ -83,6 +83,7 @@ public class Apple extends Fruit {
                 "name='" + name + '\'' +
                 ", expirationDate=" + expirationDate +
                 ", provider='" + provider + '\'' +
-                "} " + super.toString();
+                ", color='" + super.getColor() + '\'' +
+                "} ";
     }
 }

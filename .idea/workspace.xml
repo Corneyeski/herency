@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e50f25-7e81-42e0-a0cd-f56658a13397" name="Changes" comment="first creation of clases">
-      <change afterPath="$PROJECT_DIR$/src/entities/abstraction/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/abstraction/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ManzanaVariedad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ExtendedOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ServiceOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ServiceTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/impl/ServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/polymorphism/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/polymorphism/Animal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

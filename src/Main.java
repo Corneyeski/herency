@@ -6,6 +6,8 @@ import entities.enums.Tastes;
 import entities.polymorphism.Animal;
 import entities.polymorphism.Dog;
 import entities.polymorphism.Pig;
+import service.ServiceOne;
+import service.impl.ServiceImpl;
 
 import java.util.Date;
 
@@ -44,6 +46,11 @@ public class Main {
          */
         abstraction();
 
+        /**
+         * Example of interfaces
+         */
+        interfaces();
+
     }
 
 
@@ -59,6 +66,8 @@ public class Main {
 
         apple.showParentAttributes();
 
+        System.out.println(apple);
+
         Apple apple2 = new Apple("green apple", new Date(), "Frucasa");
         System.out.println(apple2);
     }
@@ -68,6 +77,7 @@ public class Main {
         Animal myAnimal = new Animal();  // Create a Animal object
         Animal myPig = new Pig();  // Create a Pig object
         Animal myDog = new Dog();  // Create a Dog object
+
         myAnimal.animalSound();
         myPig.animalSound();
         myDog.animalSound();
@@ -93,5 +103,14 @@ public class Main {
         B b = new B();
         b.printSomething();
         b.printStatus();
+    }
+
+    public static void interfaces() {
+        ServiceOne serviceOne = new ServiceImpl();
+
+        serviceOne.methodOne();
+        serviceOne.methodTwo("Test message");
+        System.out.println(serviceOne.methodThree("this", "are", "multiple", "values"));
+        System.out.println(serviceOne.methodFour());
     }
 }
