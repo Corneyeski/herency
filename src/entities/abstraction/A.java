@@ -2,9 +2,9 @@ package entities.abstraction;
 
 public abstract class A {
 
-    abstract void printStatus();
+    public abstract void printStatus();
 
-    public static void printSomething(String some){
+    public static void printSomething(String some) {
         System.out.println("This is the something: " + some);
     }
 

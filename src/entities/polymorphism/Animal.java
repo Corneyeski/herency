@@ -1,5 +1,7 @@
 package entities.polymorphism;
 
+import entities.Apple;
+
 public class Animal {
     int legs;
 

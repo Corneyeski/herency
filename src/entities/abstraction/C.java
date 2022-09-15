@@ -1,12 +1,8 @@
 package entities.abstraction;
 
-public class B extends A {
-
+public class C extends A {
     @Override
     public void printStatus() {
-        System.out.println("Status is ok");
+        System.out.println("Everything is broken");
     }
-
-
-
 }

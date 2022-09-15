@@ -1,6 +1,8 @@
 import entities.Apple;
+import entities.AppleRead;
 import entities.abstraction.A;
 import entities.abstraction.B;
+import entities.abstraction.C;
 import entities.enums.Colors;
 import entities.enums.Tastes;
 import entities.polymorphism.Animal;
@@ -9,12 +11,39 @@ import entities.polymorphism.Pig;
 import service.ServiceOne;
 import service.impl.ServiceImpl;
 
-import java.util.Date;
+import java.util.*;
 
 public class Main {
 
 
     public static void main(String[] args) {
+
+
+        String text = "sdgasd";
+
+        Map<Character, Integer> mapTxt = new HashMap<>();
+
+        for (char c : text.toCharArray())
+            mapTxt.put(c, mapTxt.getOrDefault(c, 0) + 1);
+
+        System.out.println(mapTxt.entrySet().stream().filter(entry -> entry.getValue() == 1).findFirst());
+
+
+        String name = "Alan";
+        name = "";
+
+        String nameMayus = name.toUpperCase();
+
+        System.out.println(name);
+        System.out.println(nameMayus);
+        System.out.println(name.toUpperCase());
+
+
+
+        AppleRead re = new AppleRead("minusculas", new Date(), "");
+        System.out.println(re.toUpperCase());
+
+
 
         System.out.println("********************INHERITANCE********************");
 
@@ -46,10 +75,25 @@ public class Main {
          */
         abstraction();
 
+        System.out.println("********************INTERFACES********************");
+
         /**
          * Example of interfaces
          */
         interfaces();
+
+
+        Map<Integer, String> map = new HashMap<>();
+        Map<Apple, Boolean> map2 = new LinkedHashMap<>();
+        Map<Integer, String> map3 = new TreeMap<>();
+
+        map.put(2, "Carlos");
+        map.put(1, "Alan");
+
+        map.forEach((k, v) -> {
+            System.out.println(k);
+            System.out.println(v);
+        });
 
     }
 
@@ -58,6 +102,8 @@ public class Main {
         //Initialize Apple class with default attr for the parent
         Apple apple = new Apple();
         apple.showParentAttributes();
+
+        apple.setColor(Colors.RED);
 
         //We can set the properties of the parent class using the child class object
         apple.setColor(Colors.GREEN);
@@ -70,6 +116,9 @@ public class Main {
 
         Apple apple2 = new Apple("green apple", new Date(), "Frucasa");
         System.out.println(apple2);
+
+
+        AppleRead read = new AppleRead("Reader", new Date(), "provider");
     }
 
 
@@ -96,6 +145,7 @@ public class Main {
     }
 
     public static void abstraction() {
+
         A abs = new B();
         abs.printSomething();
         A.printSomething("Cool");
@@ -103,14 +153,23 @@ public class Main {
         B b = new B();
         b.printSomething();
         b.printStatus();
+
+
+        A a = new B();
+        A a2 = new C();
+
+        a.printStatus();
+        a2.printStatus();
     }
 
     public static void interfaces() {
+
         ServiceOne serviceOne = new ServiceImpl();
 
         serviceOne.methodOne();
         serviceOne.methodTwo("Test message");
         System.out.println(serviceOne.methodThree("this", "are", "multiple", "values"));
         System.out.println(serviceOne.methodFour());
+
     }
 }

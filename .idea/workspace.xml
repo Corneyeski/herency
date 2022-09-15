@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e50f25-7e81-42e0-a0cd-f56658a13397" name="Changes" comment="first creation of clases">
-      <change afterPath="$PROJECT_DIR$/src/entities/ManzanaVariedad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ExtendedOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ServiceOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ServiceTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/AppleRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/abstraction/C.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Apple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/abstraction/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/abstraction/A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/abstraction/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/abstraction/B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/polymorphism/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/polymorphism/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ServiceTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ServiceTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/ServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662977051048</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first creation of clases">
+      <created>1663074657488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663074657488</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

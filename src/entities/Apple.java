@@ -45,7 +45,7 @@ public class Apple extends Fruit {
      * GETTERS & SETTERS
      */
     public String getName() {
-        return name;
+        return name + " " + provider;
     }
 
     public void setName(String name) {

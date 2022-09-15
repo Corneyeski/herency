@@ -1,25 +1,35 @@
 package service.impl;
 
+import entities.abstraction.A;
 import service.ServiceOne;
 import service.ServiceTwo;
 
 import java.util.Arrays;
+import java.util.List;
 
-public class ServiceImpl implements ServiceOne, ServiceTwo {
+public class ServiceImpl extends A implements ServiceOne, ServiceTwo {
+
+    @Override
+    public List<Boolean> listOfBooleans(int i) {
+
+        //TODO
+
+        return null;
+    }
 
     @Override
     public void methodOne() {
-        System.out.println("This is method one");
+
     }
 
     @Override
     public void methodTwo(String message) {
-        System.out.println("This is method two: " + message);
+
     }
 
     @Override
     public String methodThree(String... values) {
-        return Arrays.toString(values);
+        return null;
     }
 
     @Override
@@ -27,4 +37,8 @@ public class ServiceImpl implements ServiceOne, ServiceTwo {
         return 0;
     }
 
+    @Override
+    public void printStatus() {
+
+    }
 }

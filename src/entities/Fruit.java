@@ -25,6 +25,10 @@ public class Fruit {
     }
 
     public void setFamily(String family) {
+
+        Apple a = new Apple();
+        a.getName();
+
         this.family = family;
     }
 
